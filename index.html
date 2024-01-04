@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+  <title>PJ 12</title>
+</head>
+<body>
+  <script>
+    const top1 = ["Jumpers", "shirts", "T-shirts", "Joggers", "Cardigans", "Hoodie"];
+    const bottom = ["Skinny fit jeans", "Wide leg tapered jeans", "Wide leg trousers", "A-line dress", "Mini dress"];
+    const shoes = ["Platform", "boots", "slip on", "Trainers"];
+
+    const result = (arr) => {
+      const randomIndex = Math.floor(Math.random() * arr.length);
+      const randomElement = arr[randomIndex];
+      return randomElement;
+    };
+
+    let myTop = result(top1);
+    let myBottom = result(bottom);
+    let myShoes = result(shoes);
+    console.log(`You should pick ${myTop} for top of today.`);
+    console.log(`You should pick ${myBottom} for bottom of today.`);
+    console.log(`You should pick ${myShoes} for shoes of today.`);
+  </script>
+</body>
+</html>
